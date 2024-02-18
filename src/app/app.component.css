@@ -1,6 +1,7 @@
 .container {
   background-color: white;
   display: grid;
+  font-family: "LeagueSpartan";
 }
 .top-container {
   display: flex;
@@ -12,7 +13,7 @@
 }
 .header-container {
   color: white;
-  font-family: "LeagueSpartan";
+
   display: flex;
   align-items: center;
   gap: 40px;
@@ -30,22 +31,22 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 5% 0% 10% 0%;
-  width: 140%;
+  padding: 10% 0% 10% 0%;
+  width: 120%;
 }
 .details {
   width: 73%;
 }
 .title {
   font-weight: 700;
-  font-size: 55px;
+  font-size: 45px;
   margin-bottom: 30px;
 }
 .content {
   color: hsl(0, 0%, 63%);
   font-weight: 500;
-  font-size: 19px;
-  line-height: 1.4em;
+  font-size: 17px;
+  line-height: 1.7em;
 }
 .shopnow-container {
   display: flex;
@@ -57,6 +58,7 @@
   margin-top: 30px;
 }
 .bottom-container {
+  display: flex;
 }
 .arrow-container {
   position: absolute;
@@ -66,10 +68,56 @@
   display: flex;
 }
 .arrow {
-  padding: 20px 30px;
+  padding: 25px 32px;
   background-color: black;
 }
+.left-img-container {
+  background-image: url("../assets/image-about-dark.jpg");
+}
+.right-img-container {
+  background-image: url("../assets/image-about-light.jpg");
+}
+.left-img-container,
+.right-img-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 134.01%;
+}
+.about-container {
+  padding: 5% 5%;
+  width: 119%;
+}
+.about-title {
+  font-family: "LeagueSpartan";
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 5%;
+}
+.submenu {
+  display: grid;
+  position: relative;
+}
+.bottom-line {
+  background-color: white;
+  width: 20px;
+  height: 3px;
+  position: absolute;
+  margin-top: 5px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
+  opacity: 0;
+}
 @media (min-width: 679px) {
+  .submenu,
+  .logo {
+    cursor: pointer;
+  }
+  .submenu:hover .bottom-line {
+    opacity: 1;
+  }
   .shopnow-container {
     cursor: pointer;
   }
