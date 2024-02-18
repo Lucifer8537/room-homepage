@@ -1,19 +1,25 @@
 <div class="container">
   <div class="top-container">
-    <img
-      src="../assets/desktop-image-hero-1.jpg"
-      alt="desktop-image-hero-1"
+    <div
+      [ngStyle]="{
+        'background-image': backgroundImg
+      }"
       class="img-container"
-    />
+    >
+      <div class="header-container">
+        <img src="../assets/logo.svg" alt="" />
+        <div class="menu">
+          <span class="submenu">home</span><span class="submenu">shop</span
+          ><span class="submenu">about</span
+          ><span class="submenu">contact</span>
+        </div>
+      </div>
+    </div>
     <div class="details-container">
       <div class="details">
-        <div class="title">Discover innovative ways to decorate</div>
+        <div class="title">{{ title }}</div>
         <div class="content">
-          We provide unmatched quality, comfort, and style for property owners
-          across the country. Our experts combine form and function in bringing
-          your vision to life. Create a room in your own style with our
-          collection and make your property a reflection of you and what you
-          love.
+          {{ content }}
         </div>
         <div class="shopnow-container">
           <span class="shopnow">SHOP NOW</span>
@@ -21,10 +27,10 @@
         </div>
       </div>
       <div class="arrow-container">
-        <div class="arrow">
+        <div class="arrow" (click)="onMove('left')">
           <img src="../assets/icon-angle-left.svg" alt="icon-angle-left" />
         </div>
-        <div class="arrow">
+        <div class="arrow" (click)="onMove('right')">
           <img src="../assets/icon-angle-right.svg" alt="icon-angle-right" />
         </div>
       </div>
