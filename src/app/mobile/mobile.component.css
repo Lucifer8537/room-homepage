@@ -1,0 +1,67 @@
+.top-image-container {
+  position: relative;
+  height: -webkit-fill-available;
+}
+.image-container {
+  width: -webkit-fill-available;
+}
+.hamburger {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.arrow-container {
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  display: flex;
+}
+.arrow {
+  padding: 15px 20px;
+  background-color: black;
+}
+.top-content-container {
+  padding: 15% 5%;
+}
+.title {
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 5%;
+}
+.content {
+  color: hsl(0, 0%, 63%);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.2em;
+}
+.shopnow-container {
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 12px;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10%;
+}
+
+.bottom-img {
+  width: 100%;
+}
+.bottom-container {
+  display: grid;
+}
+.about-container {
+  padding: 15% 5%;
+}
+.about-title {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 7%;
+}
