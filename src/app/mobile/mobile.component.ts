@@ -34,6 +34,7 @@ export class MobileComponent implements OnInit {
   title!: string;
   content!: string;
   index = 0;
+  menu!: boolean;
 
   ngOnInit(): void {
     this.onAssign();
@@ -60,5 +61,8 @@ export class MobileComponent implements OnInit {
       }
     }
     this.onAssign();
+  };
+  onClickMenu = () => {
+    this.menu = !this.menu;
   };
 }
